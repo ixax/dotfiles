@@ -1,0 +1,37 @@
+[user]
+    name = Dmitry Sorin
+    email = info@staypositive.ru
+
+[color]
+    ui = auto
+    diff = auto
+    branch = auto
+    grep = auto
+    interactive = auto
+    status = auto
+
+[github]
+    user = 1999
+
+[core]
+    autocrlf = input
+    editor = nano
+    preloadindex = true
+
+[alias]
+    co = checkout
+    st = status
+    di = diff
+    ci = commit
+    undo-commit = reset --soft HEAD^
+    hist = log --pretty=format:'%C(yellow)%h%C(reset) %ad | %C(75)%s%C(reset) %C(yellow)%d%C(reset) [%an]' --graph --date=short --branches --all
+
+[diff]
+    noprefix = true
+    renames = true
+
+[push]
+    default = current
+
+[merge]
+    log = true
