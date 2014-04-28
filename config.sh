@@ -1,12 +1,20 @@
-EXISTING_FIO=`git config --global --get user.name`
 #!/bin/sh
 
+EXISTING_FIO=`git config --global --get user.name`
 echo "Enter your first and lastname: [$EXISTING_FIO]"
 read FIO
+
+if [ "$FIO" == "" ]; then
+    FIO=$EXISTING_FIO
+fi
 
 EXISTING_EMAIL=`git config --global --get user.email`
 echo "Enter your e-mail: [$EXISTING_EMAIL]"
 read EMAIL
+
+if [ "$EMAIL" == "" ]; then
+    EMAIL=$EXISTING_EMAIL
+fi
 
 git config --global user.name "$FIO"
 git config --global user.email "$EMAIL"
