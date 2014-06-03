@@ -44,4 +44,6 @@ git config --global alias.ci commit
 git config --global alias.undo-commit "reset --soft HEAD^"
 git config --global alias.hist "log --pretty=format:'%C(yellow)%h%C(reset) %ad | %C(75)%s%C(reset) %C(yellow)%d%C(reset) [%an]' --graph --date=short --branches --all"
 
+git config --global --add hub.host github.yandex-team.ru
+
 exit 0
