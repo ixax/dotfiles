@@ -18,7 +18,7 @@ fi
 
 git config --global user.name "$FIO"
 git config --global user.email "$EMAIL"
-git config --global github.user 1999
+git config --global github.user ixax
 
 git config --global color.ui auto
 git config --global color.diff auto
@@ -28,7 +28,7 @@ git config --global color.interactive auto
 git config --global color.status auto
 
 git config --global core.autocrlf input
-git config --global core.editor nano
+git config --global core.editor vim
 git config --global core.preloadindex true
 
 git config --global diff.noprefix true
